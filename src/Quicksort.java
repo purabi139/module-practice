@@ -5,7 +5,7 @@ public class Quicksort {
 
 		int x = a[upperBound];
 		int i = lowerBound - 1;
-		for (int j = lowerBound; j < upperBound ; j++) {
+		for (int j = lowerBound; j < upperBound; j++) {
 			if (a[j] <= x) {
 				i = i + 1;
 				swap(i, j, a);
@@ -14,14 +14,12 @@ public class Quicksort {
 		swap(i + 1, upperBound, a);
 		return i + 1;
 	}
-	
-	public static void quicksort(int p,int r,int a[])
-	{
-		if(p<r)
-		{
-			int pivot=partition(p,r,a);
-			quicksort(p,pivot-1,a);
-			quicksort(pivot+1,r,a);
+
+	public static void quicksort(int p, int r, int a[]) {
+		if (p < r) {
+			int pivot = partition(p, r, a);
+			quicksort(p, pivot - 1, a);
+			quicksort(pivot + 1, r, a);
 		}
 	}
 
@@ -41,7 +39,7 @@ public class Quicksort {
 
 	public static void main(String[] args) {
 		int input[] = { 5, 1, 6, 2, 4, 3 };
-		quicksort(0,input.length-1,input);
+		quicksort(0, input.length - 1, input);
 		printnumbers(input);
 	}
 

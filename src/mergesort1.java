@@ -51,23 +51,23 @@ public class mergesort1 {
 
 		while (indexL < left.length || indexR < right.length) {
 			if (indexL < left.length && indexR < right.length) {
-						if (left[indexL] <= right[indexR]) {
-							result[indexres] = left[indexL];
-							indexL++;
-							indexres++;
-		
-						} else {
-							result[indexres] = right[indexR];
-							indexR++;
-							indexres++;
-						}
-				// if the rightside  has no  elemnts
+				if (left[indexL] <= right[indexR]) {
+					result[indexres] = left[indexL];
+					indexL++;
+					indexres++;
+
+				} else {
+					result[indexres] = right[indexR];
+					indexR++;
+					indexres++;
+				}
+				// if the rightside has no elemnts
 			} else if (indexL < left.length) {
 				result[indexres] = left[indexL];
 				indexL++;
 				indexres++;
-				
-				//if the leftside has no elements
+
+				// if the leftside has no elements
 			} else if (indexR < right.length) {
 				result[indexres] = right[indexR];
 				indexR++;

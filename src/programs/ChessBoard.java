@@ -1,5 +1,5 @@
 
-package practice.programs;
+package programs;
 
 public class ChessBoard {
 

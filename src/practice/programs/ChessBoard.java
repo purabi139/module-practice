@@ -1,5 +1,7 @@
 
-public class chessboard1 {
+package practice.programs;
+
+public class ChessBoard {
 
 	public static void main(String[] args) {
 		for (int i = 0; i < 9; i++) {
@@ -21,9 +23,9 @@ public class chessboard1 {
 
 		}
 		if (column % 2 == 0) {
-			System.out.print(Start + "");
+			System.out.print(Start + " ");
 		} else
-			System.out.print(Next + "");
+			System.out.print(Next + " ");
 
 	}
 

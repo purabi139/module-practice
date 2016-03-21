@@ -1,7 +1,3 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
 public class Mergesort {
 
 	public static int[] Merge(int a[], int lowerBound, int middle, int upperBound) {

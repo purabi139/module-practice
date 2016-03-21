@@ -1,9 +1,3 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
-import org.omg.Messaging.SyncScopeHelper;
-
 public class Swapusingbyreference {
 
 	public static void main(String[] args) {

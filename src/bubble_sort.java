@@ -1,5 +1,3 @@
-import org.omg.Messaging.SyncScopeHelper;
-
 public class bubble_sort {
 
 	// sort the array { 4, 2, 9, 6, 23, 12, 34, 0, 1 };
